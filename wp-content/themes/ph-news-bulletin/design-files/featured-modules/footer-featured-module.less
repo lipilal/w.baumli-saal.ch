@@ -1,0 +1,144 @@
+
+.footer-featured-module-style {
+	background: @background-plain;
+	padding: 20px 20px;
+	.footer-fa-title{
+		margin-bottom: 20px;
+	}
+	.footer-fa span {
+		font-size:26px; font-weight:700; 
+		letter-spacing:1px; 
+		text-transform:uppercase;
+		text-align:center; margin:auto;
+		white-space:nowrap;
+		padding-bottom:13px;
+		position: relative;
+		margin-bottom: 20px;
+	  }
+	  .footer-fa span:before {
+		  background-color: @primary;
+		  content: '';
+		  display: block;
+		  height: 3px;
+		  width: 75px;
+		  margin-bottom: 5px;
+	  }
+	  .footer-fa span:after {
+		  background-color: @primary;
+		  content: '';
+		  display: block;
+		  position:absolute;
+		  right:0;
+		  bottom:0;
+		  height: 3px;
+		  width: 75px;
+		  margin-bottom: 0.25em;
+	  }
+
+	a {
+		text-decoration: none;
+		h2 {
+			transition: 0.2s all ease;
+		}
+	}
+	figure {
+		position: relative;
+		width: 100%;
+		img{
+			width: 100%;
+			aspect-ratio: 4/3;
+			object-fit: cover;
+		}
+	}
+	figure::before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		display: block;
+		content: '';
+		width: 0;
+		height: 0;
+		background: rgba(255,255,255,.2);
+		border-radius: 100%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		opacity: 0;
+	}
+	figure:hover::before {
+		-webkit-animation: circle .75s;
+		animation: circle .75s;
+	}
+	@-webkit-keyframes circle {
+		0% {
+			opacity: 1;
+		}
+		40% {
+			opacity: 1;
+		}
+		100% {
+			width: 200%;
+			height: 200%;
+			opacity: 0;
+		}
+	}
+	@keyframes circle {
+		0% {
+			opacity: 1;
+		}
+		40% {
+			opacity: 1;
+		}
+		100% {
+			width: 200%;
+			height: 200%;
+			opacity: 0;
+		}
+	}
+	.featured-post {
+		position: relative;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 15px;
+		}
+		&:hover {
+			img {
+				filter: brightness(0.5);
+			}
+			a h2 {
+				color: @text-dark;
+			}
+		}
+		.category-ribbon {
+			position: absolute;
+			top: 0px;
+			left: 12px;
+			background: @primary;
+			color: @primary-text;
+			text-transform: uppercase;
+			padding: 5px 8px;
+			border-radius: 2px;
+			font-size: 11px;
+			line-height: 11px;
+			z-index: 99;
+		}
+	}
+	.entry-title {
+		font-size: 20px;
+		text-decoration: none;
+		line-height: 1.5em;
+		margin-top: 10px;
+		color: @text-dark;
+		&:hover{
+			color: @secondary-dark;
+		}
+	}
+	.footer-meta {
+		font-size: 12px;
+		text-transform: uppercase;
+		color: @text-light;
+		&:hover{
+			color: @secondary-dark;
+		}
+	}
+	
+} 

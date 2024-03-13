@@ -1,0 +1,45 @@
+#site-branding {
+	.logo-search-wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.search-form {
+			display: inline-block;
+			button, input[type=submit] {
+				display: none;
+			}
+			input[type=search] {
+				font-size: 14px;
+				height: 37px;
+				padding: 5px 15px;
+				border-radius: 21px;
+				border: dotted 1px @primary;
+				&:focus {
+					outline: @primary solid 1px;
+				}
+			}
+		}
+	}
+	padding: 45px 0;
+	text-align: center;
+	background: @header-bg;
+	.custom-logo {
+		max-height: 100px;
+		width: auto; 
+	}
+	.site-title {
+		text-align: left;
+		position: relative;
+		z-index: 99;
+		padding: 0px 18px;
+		a {
+			color: @text-dark;
+			font-size: 42px;
+			font-weight: 800;
+			text-decoration: none;
+			&:hover {
+				color: @primary;
+			}
+		}
+	}
+}

@@ -1,0 +1,132 @@
+:root {
+  --phnewsbulletin-primary: #f37e7e;
+  --phnewsbulletin-primary-text: #f9ffe7;
+  --phnewsbulletin-background-main: #edf6fc;
+  --phnewsbulletin-background-plain: #ffff;
+  --phnewsbulletin-background-darker: #eeeeee;
+  --phnewsbulletin-secondary: #747474;
+  --phnewsbulletin-secondary-dark: #E9C864;
+  --phnewsbulletin-secondary-text: #FFF;
+  --phnewsbulletin-text-dark: #111;
+  --phnewsbulletin-text: #555;
+  --phnewsbulletin-text-light: #777;
+  --phnewsbulletin-header-background: #fff;
+  --phnewsbulletin-header-global-background: #000000;
+  --phnewsbulletin-header-lighter: #222;
+  --phnewsbulletin-header-text: #FFFFFF;
+  --phnewsbulletin-menu-text: #232323;
+  --phnewsbulletin-top-bar-text: #fffdec;
+  --phnewsbulletin-top-bar-background: #3a3a3a;
+  --phnewsbulletin-mobile-header-background: #FFFFFF;
+  --phnewsbulletin-mobile-header-text: #222222;
+}
+#secondary {
+  border-left: var(--phnewsbulletin-background-darker) solid 1px;
+  padding: 15px;
+  background: var(--phnewsbulletin-background-plain);
+}
+@media screen and (max-width: 767px) {
+  #secondary {
+    border: none;
+  }
+}
+.widget {
+  padding: 15px;
+}
+.widget h2,
+.widget h3,
+.widget h4,
+.widget h1,
+.widget .widget-title {
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px var(--phnewsbulletin-background-darker);
+}
+.widget ul,
+.widget ol {
+  margin-left: 3px;
+  padding-left: 0px;
+  list-style: none;
+}
+.widget li {
+  padding: 8px 0;
+  border-bottom: solid 1px var(--phnewsbulletin-background-darker);
+}
+.widget li:last-child {
+  border-bottom: none;
+}
+.widget li a {
+  color: var(--phnewsbulletin-text-light);
+  text-decoration: none;
+}
+.widget li a:hover {
+  color: var(--phnewsbulletin-secondary-dark);
+}
+.widget p a {
+  text-decoration: underline;
+  color: var(--phnewsbulletin-primary);
+}
+.widget .widget_block h1:only-child,
+.widget .widget_block h2:only-child,
+.widget .widget_block h3:only-child,
+.widget .widget_block h4:only-child,
+.widget .widget_block h5:only-child,
+.widget .widget_block h6:only-child {
+  margin-bottom: -40px;
+}
+/* Custom LESS for the Featured Post section in the sidebar */
+.featured-post-widget {
+  /* Add some padding around the entire widget */
+  padding: 10px;
+}
+.featured-post-widget .fp-sidebar-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  /* Add some space below the title */
+}
+.featured-post-widget .featured-sidebar-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-thumbnail-wrapper {
+  /* Add margin between each post (adjust as needed) */
+  margin-bottom: 20px;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-thumbnail-wrapper img {
+  /* Make sure the thumbnail images fit nicely within their containers */
+  max-width: 100%;
+  aspect-ratio: 1.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper {
+  /* Add margin between the post info and the thumbnail (adjust as needed) */
+  margin-bottom: 20px;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper .sidebar-title {
+  /* Style the post titles in the sidebar */
+  font-size: 14px;
+  margin-bottom: 5px;
+  /* Add some space below the title */
+  color: var(--phnewsbulletin-text-dark);
+  text-transform: capitalize;
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper .sidebar-title:hover {
+  color: var(--phnewsbulletin-secondary-dark);
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper .entry-meta {
+  /* Style the entry meta information (date, author, etc.) */
+  font-size: 13px;
+  color: var(--phnewsbulletin-text);
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper .entry-meta a {
+  color: var(--phnewsbulletin-secondary);
+}
+.featured-post-widget .featured-sidebar-row .sidebar-post-info-wrapper .entry-meta a:hover {
+  color: var(--phnewsbulletin-secondary-dark);
+}

@@ -1,0 +1,42 @@
+@import 'colors';
+
+
+//Basic Styles
+body {
+	background: @background;
+	word-wrap: break-word;
+} 
+
+a {
+	color: @secondary;
+	transition: 0.4s all ease;
+	&:hover, &:visited {
+		color: @secondary-dark;
+	}
+	&:focus {
+		outline: dotted 1px black;
+	}
+}
+
+::selection {
+	background: @primary;
+	color: @primary-text;
+}
+
+.phnewsbulletin-pagination {
+	text-align: center;
+	.page-numbers {
+		color: @text-content;
+		margin-right: 3px;
+		margin-left: 3px;
+		border: solid 1px @text-light;
+		padding: 2px 10px;
+		text-decoration: none;
+		&.current {
+			background: @background-darker;
+		}
+	}
+	a.page-numbers:hover {
+		background: @background-darker;
+	}
+}

@@ -1,0 +1,71 @@
+:root {
+  --phnewsbulletin-primary: #f37e7e;
+  --phnewsbulletin-primary-text: #f9ffe7;
+  --phnewsbulletin-background-main: #edf6fc;
+  --phnewsbulletin-background-plain: #ffff;
+  --phnewsbulletin-background-darker: #eeeeee;
+  --phnewsbulletin-secondary: #747474;
+  --phnewsbulletin-secondary-dark: #E9C864;
+  --phnewsbulletin-secondary-text: #FFF;
+  --phnewsbulletin-text-dark: #111;
+  --phnewsbulletin-text: #555;
+  --phnewsbulletin-text-light: #777;
+  --phnewsbulletin-header-background: #fff;
+  --phnewsbulletin-header-global-background: #000000;
+  --phnewsbulletin-header-lighter: #222;
+  --phnewsbulletin-header-text: #FFFFFF;
+  --phnewsbulletin-menu-text: #232323;
+  --phnewsbulletin-top-bar-text: #fffdec;
+  --phnewsbulletin-top-bar-background: #3a3a3a;
+  --phnewsbulletin-mobile-header-background: #FFFFFF;
+  --phnewsbulletin-mobile-header-text: #222222;
+}
+body {
+  word-wrap: break-word;
+  background: var(--phnewsbulletin-background-main);
+}
+a {
+  color: var(--phnewsbulletin-secondary);
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+a:hover,
+a:visited {
+  color: var(--phnewsbulletin-secondary-dark);
+}
+a:focus {
+  outline: dotted 1px black;
+}
+::-moz-selection {
+  background: var(--phnewsbulletin-primary);
+  color: var(--phnewsbulletin-primary-text);
+}
+::selection {
+  background: var(--phnewsbulletin-primary);
+  color: var(--phnewsbulletin-primary-text);
+}
+.phnewsbulletin-pagination {
+  text-align: center;
+  margin: 20px 0px;
+}
+.phnewsbulletin-pagination .page-numbers {
+  color: var(--phnewsbulletin-text);
+  margin-right: 3px;
+  margin-left: 3px;
+  border: solid 1px var(--phnewsbulletin-text-light);
+  padding: 2px 10px;
+  text-decoration: none;
+}
+.phnewsbulletin-pagination .page-numbers.current {
+  background: var(--phnewsbulletin-background-darker);
+}
+.phnewsbulletin-pagination a.page-numbers:hover {
+  background: var(--phnewsbulletin-background-darker);
+}
+.comment-content a {
+  text-decoration: underline;
+  color: var(--phnewsbulletin-primary);
+}
+.is-style-squared a {
+  border-radius: 0px;
+}
