@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# XML Sitemap & Google News version 5.4.5 - https://status301.net/wordpress-plugins/xml-sitemap-feed/
+Sitemap: https://w.baumli-saal.ch/sitemap.xml
+Sitemap: https://w.baumli-saal.ch/feed/index.xml
